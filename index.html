@@ -9,35 +9,75 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
         crossorigin="anonymous">
 </head>
-<body class="bg-dark">
+<body class="bg-dark text-white">
     <div class="container">
-         <div><h1 class="name">Dr. Michio Kaku, PhD</h1><hr></div>
+         <div><h1 class="text-center">Dr. Michio Kaku, PhD</h1><hr></div>
 
 
-            <!-- need to fix image and text formating (should be side by side) -->
+         <!-- need to figure out how to keep text boz proper size for diff device sizes -->
 
-                <div>
-                    <img src="kaku.jpg" class="pull-right img-fluid rounded-4 border" alt=""> <br>
-                    <blockquote class="blockquote bg-dark-subtle text-left p-4 rounded-4 border-4">
-                        <p>Michio Kaku, born on January 24, 1947, is a renowned theoretical physicist futurist, and professor at the City College of New York, where he co-founded string field theory. Known for making complex scientific ideas accessible and engaging, he has authored several bestselling books, including Physics of the Impossible and The Future of the Mind. Kaku also hosts the radio program "Science Fantastic" and frequently appears on television, podcasts, and documentaries, where he discusses topics such as the future of technology, space exploration, the nature of the universe, quantum computing, and so much more!</p>
-                      </blockquote>
-                </div>
+         <div class="d-flex">
+            <div class="flex-shrink-0">
+              <img src="kaku.jpg" class="img-fluid border border-4 border-black"  alt="...">
+            </div>
+            <div class="flex-grow-1 ms-3 bg-white text-black p-1 border border-4 border-black">
+                    <p>Michio Kaku, born on January 24, 1947, is a renowned theoretical physicist futurist, and professor at the City College of New York, where he co-founded string field theory. Known for making complex scientific ideas accessible and engaging, he has authored several bestselling books, including Physics of the Impossible and The Future of the Mind. Kaku also hosts the radio program "Science Fantastic" and frequently appears on television, podcasts, and documentaries, where he discusses topics such as the future of technology, space exploration, the nature of the universe, quantum computing, and so much more!</p>
+            </div>
+          </div>
 
-            <!-- need to add 3 card grid with working links -->
+
+            <!-- need to fix image sizing to be the same for all 3 cards-->
 
             <div class="events">
-                <h3 class="text-white">Upcoming events:</h3>
+                <h3>Upcoming events:</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="kakufoh.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Future of Humanity with Michio Kaku in Bucharest</h5> <hr>
+                            <p class="card-text">Mark your calendars for October 21, 2024, as Michio Kaku, the esteemed physicist and futurist, will take the stage at Palace Hall in Bucharest for The Future of Humanity event. This highly anticipated gathering, organized by Brand Minds</p>
+                          </div>
+                          <div class="card-footer">
+                           <a href="https://visitbucharest.today/michio-kaku-bucharest-future-of-humanity/">Link to Event</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="kakufoh.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Future of Humanity with Michio Kaku in Bucharest</h5> <hr>
+                          <p class="card-text">Mark your calendars for October 21, 2024, as Michio Kaku, the esteemed physicist and futurist, will take the stage at Palace Hall in Bucharest for The Future of Humanity event. This highly anticipated gathering, organized by Brand Minds</p>
+                        </div>
+                        <div class="card-footer">
+                         <a href="https://visitbucharest.today/michio-kaku-bucharest-future-of-humanity/">Link to Event</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="kakufoh.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Future of Humanity with Michio Kaku in Bucharest</h5> <hr>
+                            <p class="card-text">Mark your calendars for October 21, 2024, as Michio Kaku, the esteemed physicist and futurist, will take the stage at Palace Hall in Bucharest for The Future of Humanity event. This highly anticipated gathering, organized by Brand Minds</p>
+                          </div>
+                          <div class="card-footer">
+                           <a href="https://visitbucharest.today/michio-kaku-bucharest-future-of-humanity/">Link to Event</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
             </div>
 
 
             <!-- need to edit and add the article items -->
-
-            <div>
-                <h3 class="text-white">Articles: </h3>
+            <h3>Articles: </h3>
+            <div class="border border-4 border-black">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             Accordion Item #1
                             </button>
                         </h2>
@@ -47,7 +87,7 @@
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             Accordion Item #2
                             </button>
                         </h2>
@@ -71,10 +111,10 @@
             <!-- need to add a submit button for the favourite scientist comment -->
 
             <div>
-                <h3 class="text-white">Favourite Scientist:</h3>
+                <h3>Favourite Scientist:</h3>
                 <form> 
-                    <div class="form-group">
-                        <textarea class="form-control bg-dark-subtle" id="textarea" rows="3" placeholder="Comment your favourite scientist Here..... "></textarea>
+                    <div class="form-group border border-4 border-black">
+                        <textarea class="form-control" id="textarea" rows="3" placeholder="Comment your favourite scientist Here..... "></textarea>
                       </div>
                 </form>
             </div>
